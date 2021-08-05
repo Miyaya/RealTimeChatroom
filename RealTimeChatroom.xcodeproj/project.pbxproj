@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D488F63A26BC7717008DA6F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F63926BC7717008DA6F7 /* AppDelegate.swift */; };
+		D488F63C26BC7717008DA6F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F63B26BC7717008DA6F7 /* SceneDelegate.swift */; };
+		D488F63E26BC7717008DA6F7 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F63D26BC7717008DA6F7 /* ConversationsViewController.swift */; };
+		D488F64126BC7717008DA6F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D488F63F26BC7717008DA6F7 /* Main.storyboard */; };
+		D488F64326BC771E008DA6F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D488F64226BC771E008DA6F7 /* Assets.xcassets */; };
+		D488F64626BC771E008DA6F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D488F64426BC771E008DA6F7 /* LaunchScreen.storyboard */; };
+		D488F65426BC7991008DA6F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F65326BC7991008DA6F7 /* LoginViewController.swift */; };
+		D488F65626BC79A5008DA6F7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F65526BC79A5008DA6F7 /* RegisterViewController.swift */; };
+		D488F65826BC79C3008DA6F7 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F65726BC79C3008DA6F7 /* PhotoViewerViewController.swift */; };
+		D488F65A26BC79D1008DA6F7 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F65926BC79D1008DA6F7 /* VideoPlayerViewController.swift */; };
+		D488F65C26BC79FB008DA6F7 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F65B26BC79FB008DA6F7 /* NewConversationViewController.swift */; };
+		D488F65E26BC7A2F008DA6F7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F65D26BC7A2F008DA6F7 /* ProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D488F63626BC7717008DA6F7 /* RealTimeChatroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeChatroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D488F63926BC7717008DA6F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D488F63B26BC7717008DA6F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D488F63D26BC7717008DA6F7 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		D488F64026BC7717008DA6F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D488F64226BC771E008DA6F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D488F64526BC771E008DA6F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D488F64726BC771E008DA6F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D488F65326BC7991008DA6F7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D488F65526BC79A5008DA6F7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D488F65726BC79C3008DA6F7 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
+		D488F65926BC79D1008DA6F7 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		D488F65B26BC79FB008DA6F7 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		D488F65D26BC7A2F008DA6F7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D488F63326BC7717008DA6F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D488F62D26BC7717008DA6F7 = {
+			isa = PBXGroup;
+			children = (
+				D488F63826BC7717008DA6F7 /* RealTimeChatroom */,
+				D488F63726BC7717008DA6F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D488F63726BC7717008DA6F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D488F63626BC7717008DA6F7 /* RealTimeChatroom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D488F63826BC7717008DA6F7 /* RealTimeChatroom */ = {
+			isa = PBXGroup;
+			children = (
+				D488F65126BC7880008DA6F7 /* Controllers */,
+				D488F65026BC7879008DA6F7 /* Views */,
+				D488F64F26BC7872008DA6F7 /* Models */,
+				D488F64E26BC786A008DA6F7 /* ViewModels */,
+				D488F64D26BC785F008DA6F7 /* Resourses */,
+				D488F64726BC771E008DA6F7 /* Info.plist */,
+			);
+			path = RealTimeChatroom;
+			sourceTree = "<group>";
+		};
+		D488F64D26BC785F008DA6F7 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				D488F63926BC7717008DA6F7 /* AppDelegate.swift */,
+				D488F63B26BC7717008DA6F7 /* SceneDelegate.swift */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		D488F64E26BC786A008DA6F7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D488F64F26BC7872008DA6F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D488F65026BC7879008DA6F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D488F65226BC78B3008DA6F7 /* Storyboards */,
+				D488F64226BC771E008DA6F7 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D488F65126BC7880008DA6F7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D488F63D26BC7717008DA6F7 /* ConversationsViewController.swift */,
+				D488F65326BC7991008DA6F7 /* LoginViewController.swift */,
+				D488F65526BC79A5008DA6F7 /* RegisterViewController.swift */,
+				D488F65726BC79C3008DA6F7 /* PhotoViewerViewController.swift */,
+				D488F65926BC79D1008DA6F7 /* VideoPlayerViewController.swift */,
+				D488F65B26BC79FB008DA6F7 /* NewConversationViewController.swift */,
+				D488F65D26BC7A2F008DA6F7 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D488F65226BC78B3008DA6F7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D488F63F26BC7717008DA6F7 /* Main.storyboard */,
+				D488F64426BC771E008DA6F7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D488F63526BC7717008DA6F7 /* RealTimeChatroom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D488F64A26BC771E008DA6F7 /* Build configuration list for PBXNativeTarget "RealTimeChatroom" */;
+			buildPhases = (
+				D488F63226BC7717008DA6F7 /* Sources */,
+				D488F63326BC7717008DA6F7 /* Frameworks */,
+				D488F63426BC7717008DA6F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealTimeChatroom;
+			productName = RealTimeChatApp;
+			productReference = D488F63626BC7717008DA6F7 /* RealTimeChatroom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D488F62E26BC7717008DA6F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D488F63526BC7717008DA6F7 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = D488F63126BC7717008DA6F7 /* Build configuration list for PBXProject "RealTimeChatroom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D488F62D26BC7717008DA6F7;
+			productRefGroup = D488F63726BC7717008DA6F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D488F63526BC7717008DA6F7 /* RealTimeChatroom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D488F63426BC7717008DA6F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D488F64626BC771E008DA6F7 /* LaunchScreen.storyboard in Resources */,
+				D488F64326BC771E008DA6F7 /* Assets.xcassets in Resources */,
+				D488F64126BC7717008DA6F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D488F63226BC7717008DA6F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D488F65426BC7991008DA6F7 /* LoginViewController.swift in Sources */,
+				D488F65626BC79A5008DA6F7 /* RegisterViewController.swift in Sources */,
+				D488F65C26BC79FB008DA6F7 /* NewConversationViewController.swift in Sources */,
+				D488F63E26BC7717008DA6F7 /* ConversationsViewController.swift in Sources */,
+				D488F65A26BC79D1008DA6F7 /* VideoPlayerViewController.swift in Sources */,
+				D488F63A26BC7717008DA6F7 /* AppDelegate.swift in Sources */,
+				D488F65E26BC7A2F008DA6F7 /* ProfileViewController.swift in Sources */,
+				D488F63C26BC7717008DA6F7 /* SceneDelegate.swift in Sources */,
+				D488F65826BC79C3008DA6F7 /* PhotoViewerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D488F63F26BC7717008DA6F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D488F64026BC7717008DA6F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D488F64426BC771E008DA6F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D488F64526BC771E008DA6F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D488F64826BC771E008DA6F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D488F64926BC771E008DA6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D488F64B26BC771E008DA6F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RealTimeChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yihsuan.RealTimeChatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D488F64C26BC771E008DA6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RealTimeChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yihsuan.RealTimeChatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D488F63126BC7717008DA6F7 /* Build configuration list for PBXProject "RealTimeChatroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D488F64826BC771E008DA6F7 /* Debug */,
+				D488F64926BC771E008DA6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D488F64A26BC771E008DA6F7 /* Build configuration list for PBXNativeTarget "RealTimeChatroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D488F64B26BC771E008DA6F7 /* Debug */,
+				D488F64C26BC771E008DA6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D488F62E26BC7717008DA6F7 /* Project object */;
+}
