@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D488F63A26BC7717008DA6F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F63926BC7717008DA6F7 /* AppDelegate.swift */; };
 		D488F63C26BC7717008DA6F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F63B26BC7717008DA6F7 /* SceneDelegate.swift */; };
-		D488F63E26BC7717008DA6F7 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F63D26BC7717008DA6F7 /* ConversationsViewController.swift */; };
+		D488F63E26BC7717008DA6F7 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F63D26BC7717008DA6F7 /* ConversationViewController.swift */; };
 		D488F64126BC7717008DA6F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D488F63F26BC7717008DA6F7 /* Main.storyboard */; };
 		D488F64326BC771E008DA6F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D488F64226BC771E008DA6F7 /* Assets.xcassets */; };
 		D488F64626BC771E008DA6F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D488F64426BC771E008DA6F7 /* LaunchScreen.storyboard */; };
@@ -25,7 +25,7 @@
 		D488F63626BC7717008DA6F7 /* RealTimeChatroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeChatroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D488F63926BC7717008DA6F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D488F63B26BC7717008DA6F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D488F63D26BC7717008DA6F7 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		D488F63D26BC7717008DA6F7 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		D488F64026BC7717008DA6F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D488F64226BC771E008DA6F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D488F64526BC771E008DA6F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		D488F62D26BC7717008DA6F7 = {
 			isa = PBXGroup;
 			children = (
-				D488F63826BC7717008DA6F7 /* RealTimeChatroom */,
+				D488F63826BC7717008DA6F7 /* RealTimeChatApp */,
 				D488F63726BC7717008DA6F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +65,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D488F63826BC7717008DA6F7 /* RealTimeChatroom */ = {
+		D488F63826BC7717008DA6F7 /* RealTimeChatApp */ = {
 			isa = PBXGroup;
 			children = (
 				D488F65126BC7880008DA6F7 /* Controllers */,
@@ -75,7 +75,7 @@
 				D488F64D26BC785F008DA6F7 /* Resourses */,
 				D488F64726BC771E008DA6F7 /* Info.plist */,
 			);
-			path = RealTimeChatroom;
+			path = RealTimeChatApp;
 			sourceTree = "<group>";
 		};
 		D488F64D26BC785F008DA6F7 /* Resourses */ = {
@@ -113,9 +113,8 @@
 		D488F65126BC7880008DA6F7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D488F63D26BC7717008DA6F7 /* ConversationsViewController.swift */,
-				D488F65326BC7991008DA6F7 /* LoginViewController.swift */,
-				D488F65526BC79A5008DA6F7 /* RegisterViewController.swift */,
+				D488F63D26BC7717008DA6F7 /* ConversationViewController.swift */,
+				D488F65F26BDB3B4008DA6F7 /* Login */,
 				D488F65726BC79C3008DA6F7 /* PhotoViewerViewController.swift */,
 				D488F65926BC79D1008DA6F7 /* VideoPlayerViewController.swift */,
 				D488F65B26BC79FB008DA6F7 /* NewConversationViewController.swift */,
@@ -131,6 +130,15 @@
 				D488F64426BC771E008DA6F7 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D488F65F26BDB3B4008DA6F7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D488F65326BC7991008DA6F7 /* LoginViewController.swift */,
+				D488F65526BC79A5008DA6F7 /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +214,7 @@
 				D488F65426BC7991008DA6F7 /* LoginViewController.swift in Sources */,
 				D488F65626BC79A5008DA6F7 /* RegisterViewController.swift in Sources */,
 				D488F65C26BC79FB008DA6F7 /* NewConversationViewController.swift in Sources */,
-				D488F63E26BC7717008DA6F7 /* ConversationsViewController.swift in Sources */,
+				D488F63E26BC7717008DA6F7 /* ConversationViewController.swift in Sources */,
 				D488F65A26BC79D1008DA6F7 /* VideoPlayerViewController.swift in Sources */,
 				D488F63A26BC7717008DA6F7 /* AppDelegate.swift in Sources */,
 				D488F65E26BC7A2F008DA6F7 /* ProfileViewController.swift in Sources */,
@@ -365,7 +373,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yihsuan.RealTimeChatApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yihsuan.RealTimeChatroom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -384,7 +392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yihsuan.RealTimeChatApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yihsuan.RealTimeChatroom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
