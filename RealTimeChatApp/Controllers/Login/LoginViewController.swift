@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
         let field = UITextField()
         field.autocorrectionType = .no
         field.autocapitalizationType = .none
-        field.returnKeyType = .continue
+        field.returnKeyType = .done // avoid automatically login
         field.layer.cornerRadius = 12
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.lightGray.cgColor
@@ -51,6 +51,17 @@ class LoginViewController: UIViewController {
         field.backgroundColor = .white
         field.isSecureTextEntry = true
         return field
+    }()
+    
+    private let loginButton: UIButton = {
+       let button = UIButton()
+        button.setTitle("Sign In", for: .normal)
+        button.backgroundColor = .link
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 12
+        button.layer.masksToBounds = true
+        button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
+        return button
     }()
 
     override func viewDidLoad() {
@@ -67,6 +78,7 @@ class LoginViewController: UIViewController {
         scrollView.addSubview(imageView)
         scrollView.addSubview(emailField)
         scrollView.addSubview(passwordField)
+        scrollView.addSubview(loginButton)
     }
     
     override func viewDidLayoutSubviews() {
@@ -81,12 +93,16 @@ class LoginViewController: UIViewController {
         
         emailField.frame = CGRect(x: 30,
                                   y: imageView.bottom+10,
-                                 width: scrollView.width-60,
-                                 height: 50)
+                                  width: scrollView.width-60,
+                                  height: 50)
         passwordField.frame = CGRect(x: 30,
                                   y: emailField.bottom+10,
-                                 width: scrollView.width-60,
-                                 height: 50)
+                                  width: scrollView.width-60,
+                                  height: 50)
+        loginButton.frame = CGRect(x: 30,
+                                  y: passwordField.bottom+10,
+                                  width: scrollView.width-60,
+                                  height: 50)
     }
     
     // push the register controller to screen
