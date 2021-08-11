@@ -19,6 +19,7 @@
 		D488F65A26BC79D1008DA6F7 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F65926BC79D1008DA6F7 /* VideoPlayerViewController.swift */; };
 		D488F65C26BC79FB008DA6F7 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F65B26BC79FB008DA6F7 /* NewConversationViewController.swift */; };
 		D488F65E26BC7A2F008DA6F7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F65D26BC7A2F008DA6F7 /* ProfileViewController.swift */; };
+		D488F66126C191D4008DA6F7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F66026C191D4008DA6F7 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D488F65926BC79D1008DA6F7 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		D488F65B26BC79FB008DA6F7 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		D488F65D26BC7A2F008DA6F7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D488F66026C191D4008DA6F7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				D488F63926BC7717008DA6F7 /* AppDelegate.swift */,
 				D488F63B26BC7717008DA6F7 /* SceneDelegate.swift */,
+				D488F66026C191D4008DA6F7 /* Extensions.swift */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				D488F65C26BC79FB008DA6F7 /* NewConversationViewController.swift in Sources */,
 				D488F63E26BC7717008DA6F7 /* ConversationViewController.swift in Sources */,
 				D488F65A26BC79D1008DA6F7 /* VideoPlayerViewController.swift in Sources */,
+				D488F66126C191D4008DA6F7 /* Extensions.swift in Sources */,
 				D488F63A26BC7717008DA6F7 /* AppDelegate.swift in Sources */,
 				D488F65E26BC7A2F008DA6F7 /* ProfileViewController.swift in Sources */,
 				D488F63C26BC7717008DA6F7 /* SceneDelegate.swift in Sources */,
