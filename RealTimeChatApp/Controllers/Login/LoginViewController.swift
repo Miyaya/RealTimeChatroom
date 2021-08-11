@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
         let field = UITextField()
         field.autocorrectionType = .no
         field.autocapitalizationType = .none
-        field.returnKeyType = .done // avoid automatically login
+        field.returnKeyType = .done // enter: automatically login
         field.layer.cornerRadius = 12
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.lightGray.cgColor
@@ -74,6 +74,12 @@ class LoginViewController: UIViewController {
                                                             target: self,
                                                             action: #selector(didTapRegister))
         
+        loginButton.addTarget(self,
+                              action: #selector(loginButtonTapped),
+                              for: .touchUpInside)
+        emailField.delegate = self
+        passwordField.delegate = self
+        
         view.addSubview(scrollView)
         scrollView.addSubview(imageView)
         scrollView.addSubview(emailField)
@@ -105,6 +111,33 @@ class LoginViewController: UIViewController {
                                   height: 50)
     }
     
+    // validate text fields
+    @objc private func loginButtonTapped(){
+        
+        // dismiss the keyboard
+        emailField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+        
+        guard let email = emailField.text, let password = passwordField.text,
+              !email.isEmpty, !password.isEmpty //, password.count >= 6
+        else {
+            alertUserLoginError()
+            return
+        }
+        
+        //firebase login
+    }
+    
+    func alertUserLoginError(){
+        let alert = UIAlertController(title: "Oops",
+                                      message: "Please enter valid information",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss",
+                                      style: .cancel,
+                                      handler: nil))
+        present(alert, animated: true)
+    }
+    
     // push the register controller to screen
     @objc private func didTapRegister(){
         let vc = RegisterViewController()
@@ -112,4 +145,19 @@ class LoginViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
 
+}
+
+
+extension LoginViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailField {
+            passwordField.becomeFirstResponder()
+        }
+        else if textField == passwordField {
+            loginButtonTapped()
+        }
+        
+        // true if the text field should implement its default behavior for the return button
+        return true
+    }
 }
