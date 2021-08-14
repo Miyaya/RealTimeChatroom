@@ -22,6 +22,7 @@
 		D488F65E26BC7A2F008DA6F7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F65D26BC7A2F008DA6F7 /* ProfileViewController.swift */; };
 		D488F66126C191D4008DA6F7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F66026C191D4008DA6F7 /* Extensions.swift */; };
 		D488F66326C56C84008DA6F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D488F66226C56C84008DA6F7 /* GoogleService-Info.plist */; };
+		D488F66526C71FB1008DA6F7 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F66426C71FB0008DA6F7 /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		D488F65D26BC7A2F008DA6F7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D488F66026C191D4008DA6F7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D488F66226C56C84008DA6F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D488F66426C71FB0008DA6F7 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		D488F66626C7CC88008DA6F7 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 		D488F62D26BC7717008DA6F7 = {
 			isa = PBXGroup;
 			children = (
+				D488F66726C7CE18008DA6F7 /* Configs */,
 				D488F63826BC7717008DA6F7 /* RealTimeChatApp */,
 				D488F63726BC7717008DA6F7 /* Products */,
 				EEF91E5380834C0C10D1EDF0 /* Pods */,
@@ -104,6 +108,7 @@
 				D488F63926BC7717008DA6F7 /* AppDelegate.swift */,
 				D488F63B26BC7717008DA6F7 /* SceneDelegate.swift */,
 				D488F66026C191D4008DA6F7 /* Extensions.swift */,
+				D488F66426C71FB0008DA6F7 /* DatabaseManager.swift */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -160,6 +165,14 @@
 				D488F65526BC79A5008DA6F7 /* RegisterViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		D488F66726C7CE18008DA6F7 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				D488F66626C7CC88008DA6F7 /* Debug.xcconfig */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 		EEF91E5380834C0C10D1EDF0 /* Pods */ = {
@@ -287,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D488F65426BC7991008DA6F7 /* LoginViewController.swift in Sources */,
+				D488F66526C71FB1008DA6F7 /* DatabaseManager.swift in Sources */,
 				D488F65626BC79A5008DA6F7 /* RegisterViewController.swift in Sources */,
 				D488F65C26BC79FB008DA6F7 /* NewConversationViewController.swift in Sources */,
 				D488F63E26BC7717008DA6F7 /* ConversationViewController.swift in Sources */,
@@ -323,6 +337,7 @@
 /* Begin XCBuildConfiguration section */
 		D488F64826BC771E008DA6F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D488F66626C7CC88008DA6F7 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

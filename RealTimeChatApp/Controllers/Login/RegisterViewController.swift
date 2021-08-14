@@ -18,7 +18,7 @@ class RegisterViewController: UIViewController {
     
     private let imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "person")
+        imageView.image = UIImage(systemName: "person.circle.fill")
         imageView.tintColor = .lightGray
         imageView.contentMode = .scaleAspectFit
         return imageView
@@ -173,20 +173,36 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
-            guard let result = authResult, error == nil else {
-                print("error creating user")
+        DatabaseManager.shared.userExists(with: email, completion: { [weak self] exists in
+            guard let strongSelf = self else { // prevent from memory leak
                 return
             }
             
-            let user = result.user
-            print("Create user: \(user)")
+            guard !exists else {
+                strongSelf.alertUserLoginError(message: "user for that email address already exists")
+                return
+            }
+            
+            FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
+                
+                guard authResult != nil, error == nil else {
+                    print("error creating user")
+                    return
+                }
+                
+                // data entry
+                DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstname,
+                                                                    lastName: lastname,
+                                                                    emailAddress: email))
+                // todo: flow check
+                strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+            })
         })
     }
     
-    func alertUserLoginError(){
+    func alertUserLoginError(message: String = "Please enter valid information"){
         let alert = UIAlertController(title: "Oops",
-                                      message: "Please enter valid information",
+                                      message: message,
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss",
                                       style: .cancel,
