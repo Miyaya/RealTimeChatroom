@@ -86,7 +86,7 @@ class RegisterViewController: UIViewController {
     }()
     
     private let registerButton: UIButton = {
-       let button = UIButton()
+        let button = UIButton()
         button.setTitle("Sign Up", for: .normal)
         button.backgroundColor = .systemGreen
         button.setTitleColor(.white, for: .normal)
@@ -95,15 +95,15 @@ class RegisterViewController: UIViewController {
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
         return button
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Sign Up"
         view.backgroundColor = .white
         
         registerButton.addTarget(self,
-                              action: #selector(registerButtonTapped),
-                              for: .touchUpInside)
+                                 action: #selector(registerButtonTapped),
+                                 for: .touchUpInside)
         emailField.delegate = self
         passwordField.delegate = self
         
@@ -135,25 +135,25 @@ class RegisterViewController: UIViewController {
                                  width: size,
                                  height: size)
         firstNameField.frame = CGRect(x: 30,
-                                  y: imageView.bottom+10,
-                                  width: scrollView.width-60,
-                                  height: 50)
+                                      y: imageView.bottom+10,
+                                      width: scrollView.width-60,
+                                      height: 50)
         lastNameField.frame = CGRect(x: 30,
-                                  y: firstNameField.bottom+10,
-                                  width: scrollView.width-60,
-                                  height: 50)
+                                     y: firstNameField.bottom+10,
+                                     width: scrollView.width-60,
+                                     height: 50)
         emailField.frame = CGRect(x: 30,
                                   y: lastNameField.bottom+10,
                                   width: scrollView.width-60,
                                   height: 50)
         passwordField.frame = CGRect(x: 30,
-                                  y: emailField.bottom+10,
-                                  width: scrollView.width-60,
-                                  height: 50)
+                                     y: emailField.bottom+10,
+                                     width: scrollView.width-60,
+                                     height: 50)
         registerButton.frame = CGRect(x: 30,
-                                  y: passwordField.bottom+10,
-                                  width: scrollView.width-60,
-                                  height: 50)
+                                      y: passwordField.bottom+10,
+                                      width: scrollView.width-60,
+                                      height: 50)
     }
     
     // validate text fields

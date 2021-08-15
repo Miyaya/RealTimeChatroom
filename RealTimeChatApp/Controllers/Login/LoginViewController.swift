@@ -55,7 +55,7 @@ class LoginViewController: UIViewController {
     }()
     
     private let loginButton: UIButton = {
-       let button = UIButton()
+        let button = UIButton()
         button.setTitle("Sign In", for: .normal)
         button.backgroundColor = .link
         button.setTitleColor(.white, for: .normal)
@@ -64,7 +64,7 @@ class LoginViewController: UIViewController {
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
         return button
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Sign In"
@@ -103,13 +103,13 @@ class LoginViewController: UIViewController {
                                   width: scrollView.width-60,
                                   height: 50)
         passwordField.frame = CGRect(x: 30,
-                                  y: emailField.bottom+10,
-                                  width: scrollView.width-60,
-                                  height: 50)
+                                     y: emailField.bottom+10,
+                                     width: scrollView.width-60,
+                                     height: 50)
         loginButton.frame = CGRect(x: 30,
-                                  y: passwordField.bottom+10,
-                                  width: scrollView.width-60,
-                                  height: 50)
+                                   y: passwordField.bottom+10,
+                                   width: scrollView.width-60,
+                                   height: 50)
     }
     
     // validate text fields
@@ -158,7 +158,7 @@ class LoginViewController: UIViewController {
         vc.title = "Create Account"
         navigationController?.pushViewController(vc, animated: true)
     }
-
+    
 }
 
 
