@@ -40,16 +40,35 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     //selectrow
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        do {
-            try FirebaseAuth.Auth.auth().signOut()
-            
-            let vc = LoginViewController()
-            let nav = UINavigationController(rootViewController: vc)
-            nav.modalPresentationStyle = .fullScreen // if not-> pop up as a card
-            present(nav, animated: true)
-        }
-        catch {
-            print("Fail to log out")
-        }
+        
+        let actionSheet = UIAlertController(title: "Sure to sign out",
+                                            message: "",
+                                            preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Sign out",
+                                            style: .destructive,
+                                            handler: { [weak self] _ in
+                                                guard let strongSelf = self else{
+                                                    return
+                                                }
+                                                
+                                                do {
+                                                    try FirebaseAuth.Auth.auth().signOut()
+                                                    
+                                                    let vc = LoginViewController()
+                                                    let nav = UINavigationController(rootViewController: vc)
+                                                    nav.modalPresentationStyle = .fullScreen // if not-> pop up as a card
+                                                    strongSelf.present(nav, animated: true)
+                                                }
+                                                catch {
+                                                    print("Fail to log out")
+                                                }
+                                            }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel",
+                                            style: .cancel,
+                                            handler: nil))
+        
+        present(actionSheet, animated: true)
     }
 }
