@@ -24,6 +24,32 @@
             </objects>
             <point key="canvasLocation" x="19" y="810"/>
         </scene>
+        <!--Friends Management-->
+        <scene sceneID="FkZ-dw-Y8O">
+            <objects>
+                <viewController id="dbc-HB-Th9" customClass="FriendManagementViewController" customModule="RealTimeChatroom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zKk-U1-BYc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NQc-CW-Fu9">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GAI-0y-tmQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Friends Management" id="2zn-zT-lPp"/>
+                    <connections>
+                        <outlet property="tableView" destination="NQc-CW-Fu9" id="6XD-KT-Eb2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gn9-pt-dcd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802.89855072463774" y="809.59821428571422"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="qyf-d4-kVK">
             <objects>
@@ -53,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQZ-aY-6qC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="810"/>
+            <point key="canvasLocation" x="1587" y="810"/>
         </scene>
         <!--Profile-->
         <scene sceneID="tgC-iI-3t4">
@@ -70,12 +96,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="di6-0b-R2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="88"/>
+            <point key="canvasLocation" x="1588" y="88"/>
+        </scene>
+        <!--FriendManagement-->
+        <scene sceneID="tdT-UE-gbD">
+            <objects>
+                <navigationController id="eqU-8N-4Pw" userLabel="FriendManagement" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Friend List" id="5mm-cG-Vfw"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pOF-l6-edK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dbc-HB-Th9" kind="relationship" relationship="rootViewController" id="QZF-XZ-1iT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2L-y6-De4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803" y="88"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="E4o-KJ-tNp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BoY-fg-rPc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="csa-L8-8Cx" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uXi-kh-oEO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -84,9 +126,11 @@
                     </tabBar>
                     <connections>
                         <segue destination="93D-KH-rWG" kind="relationship" relationship="viewControllers" id="W19-VQ-hIe"/>
+                        <segue destination="eqU-8N-4Pw" kind="relationship" relationship="viewControllers" id="vWh-2Y-L0A"/>
                         <segue destination="Nsn-51-bl2" kind="relationship" relationship="viewControllers" id="6QL-59-6t4"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BoY-fg-rPc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="594" y="-641"/>
         </scene>

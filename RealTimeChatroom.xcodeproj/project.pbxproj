@@ -24,6 +24,8 @@
 		D488F66326C56C84008DA6F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D488F66226C56C84008DA6F7 /* GoogleService-Info.plist */; };
 		D488F66526C71FB1008DA6F7 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F66426C71FB0008DA6F7 /* DatabaseManager.swift */; };
 		D488F66926CBC4EB008DA6F7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F66826CBC4EB008DA6F7 /* ChatViewController.swift */; };
+		D488F66B26D3EFE7008DA6F7 /* FriendManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F66A26D3EFE7008DA6F7 /* FriendManagementViewController.swift */; };
+		D488F66F26D52C57008DA6F7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F66E26D52C57008DA6F7 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		D488F66426C71FB0008DA6F7 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		D488F66626C7CC88008DA6F7 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		D488F66826CBC4EB008DA6F7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		D488F66A26D3EFE7008DA6F7 /* FriendManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendManagementViewController.swift; sourceTree = "<group>"; };
+		D488F66E26D52C57008DA6F7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		D488F64F26BC7872008DA6F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D488F66E26D52C57008DA6F7 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				D488F65B26BC79FB008DA6F7 /* NewConversationViewController.swift */,
 				D488F65D26BC7A2F008DA6F7 /* ProfileViewController.swift */,
 				D488F66826CBC4EB008DA6F7 /* ChatViewController.swift */,
+				D488F66A26D3EFE7008DA6F7 /* FriendManagementViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 				D488F63C26BC7717008DA6F7 /* SceneDelegate.swift in Sources */,
 				D488F66926CBC4EB008DA6F7 /* ChatViewController.swift in Sources */,
 				D488F65826BC79C3008DA6F7 /* PhotoViewerViewController.swift in Sources */,
+				D488F66F26D52C57008DA6F7 /* UserModel.swift in Sources */,
+				D488F66B26D3EFE7008DA6F7 /* FriendManagementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
