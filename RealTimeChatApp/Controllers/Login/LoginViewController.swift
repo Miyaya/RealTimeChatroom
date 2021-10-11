@@ -147,6 +147,11 @@ class LoginViewController: UIViewController {
             }
             
             let user = result.user
+            
+            // no-sql data structure    
+            // query out the image of users
+//            UserDefaults.standard.set(email, forKey: "email")
+            
             print("logged in user: \(user)")
             strongSelf.navigationController?.dismiss(animated: true, completion: nil)
         })

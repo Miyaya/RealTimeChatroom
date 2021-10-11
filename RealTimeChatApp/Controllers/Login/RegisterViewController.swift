@@ -202,7 +202,8 @@ class RegisterViewController: UIViewController {
                 // data entry
                 DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstname,
                                                                     lastName: lastname,
-                                                                    emailAddress: email))
+                                                                    emailAddress: email,
+                                                                    completion: {}))
                 // todo: flow check
                 strongSelf.navigationController?.dismiss(animated: true, completion: nil)
             })
