@@ -26,6 +26,7 @@
 		D488F66926CBC4EB008DA6F7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F66826CBC4EB008DA6F7 /* ChatViewController.swift */; };
 		D488F66B26D3EFE7008DA6F7 /* FriendManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F66A26D3EFE7008DA6F7 /* FriendManagementViewController.swift */; };
 		D488F66F26D52C57008DA6F7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488F66E26D52C57008DA6F7 /* UserModel.swift */; };
+		D4A3CF3D2715B83000C450CE /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3CF3C2715B83000C450CE /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		D488F66826CBC4EB008DA6F7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D488F66A26D3EFE7008DA6F7 /* FriendManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendManagementViewController.swift; sourceTree = "<group>"; };
 		D488F66E26D52C57008DA6F7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D4A3CF3C2715B83000C450CE /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				D488F63B26BC7717008DA6F7 /* SceneDelegate.swift */,
 				D488F66026C191D4008DA6F7 /* Extensions.swift */,
 				D488F66426C71FB0008DA6F7 /* DatabaseManager.swift */,
+				D4A3CF3C2715B83000C450CE /* StorageManager.swift */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				D488F63C26BC7717008DA6F7 /* SceneDelegate.swift in Sources */,
 				D488F66926CBC4EB008DA6F7 /* ChatViewController.swift in Sources */,
 				D488F65826BC79C3008DA6F7 /* PhotoViewerViewController.swift in Sources */,
+				D4A3CF3D2715B83000C450CE /* StorageManager.swift in Sources */,
 				D488F66F26D52C57008DA6F7 /* UserModel.swift in Sources */,
 				D488F66B26D3EFE7008DA6F7 /* FriendManagementViewController.swift in Sources */,
 			);

@@ -11,7 +11,7 @@ import FirebaseDatabase
 final class DatabaseManager {
     static let shared = DatabaseManager() // singleton
     
-    //private let database = Database.database().reference()
+    //private let ref = Database.database().reference()
     private let ref = Database.database(url: "($DATABASE_URL)").reference()
 }
 

@@ -29,12 +29,16 @@ class ChatAppUser {
     let firstName: String
     let lastName: String
     let emailAddress: String
-//    let profilePictureUrl: String
     
     var safeEmail: String {
         var safeEmail = emailAddress.replacingOccurrences(of: ".", with: "-")
         safeEmail = safeEmail.replacingOccurrences(of: "@", with: "=")
         return safeEmail
+    }
+    
+    var profilePictureFileName: String {
+        // a8udej-gmail-com_profile_picture.jpg
+        return "\(safeEmail)_profile_picture.png"
     }
     
     init(firstName: String, lastName: String, emailAddress: String){

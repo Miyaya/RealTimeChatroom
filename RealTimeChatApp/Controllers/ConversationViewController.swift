@@ -44,18 +44,23 @@ class ConversationViewController: UIViewController {
     
     @objc private func didTapComposeButton() {
         let vc = NewConversationViewController()
+        vc.completion = { [weak self] result in
+            self?.createNewConversation(result: result)
+        }
         let navVC = UINavigationController(rootViewController: vc)
         present(navVC, animated: true)
     }
     
-    // todo: save even if it's an empty conversation
-//    private func createNewConversation(result: [String:String]) {
-//        let vc = ChatViewController()
-//        vc.title = ""
-//        vc.navigationItem.largeTitleDisplayMode = .never
-//        navigationController?.pushViewController(vc, animated: true)
-//    }
-//    
+    private func createNewConversation(result: [String:String]) {
+        guard let name = result["name"], let email = result["email"] else { // email as key in db
+            return
+        }
+        let vc = ChatViewController()
+        vc.title = name
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
